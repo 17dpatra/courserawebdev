@@ -11,19 +11,23 @@
   box-sizing: border-box;
 }
 h1 {
-  margin-bottom: 15px;
+  margin-bottom: 6%;
+  margin-top: 4%;
+  text-align: center;
+  font-family: Courier New;
 }
 
 p {
   border: 2px solid black;
   background-color: #CCD1D1;
-  width: 90%;
+  width: 95%;
   height: 150px;
   margin-right: auto;
   margin-left: auto;
-  font-family: Arial;
+  font-family: Courier New;
+  font-size: 80%;
   color: black;
-  padding-top: 10%;
+  padding: 10% 3% 5% 3%;
 }
 
 /* Simple Responsive Framework. */
@@ -37,17 +41,50 @@ div.title1 {
 	background-color: #F1948A;
 	position: relative;
 	width: 40%;
-	text-align: right;
-	margin-left: 60%;
 	height: 30px;
 	float: right;
-	margin-top: 18px;
-	margin-right: 23px;
-	font-size: 14pt;
-	font-family: Arial;
+	margin-top: 15px;
+	margin-right: 12.5px;
+	font-size: 100%;
+	font-family: Courier New;
 	font-weight: bold;
 	text-align: center;
-	padding-top: 4px;
+	padding-top: 5px;
+}
+
+div.title2 {
+	border-bottom: 2px solid black;
+	border-left: 2px solid black;
+	background-color: #C0392B;
+	position: relative;
+	width: 40%;
+	height: 30px;
+	float: right;
+	margin-top: 15px;
+	margin-right: 12.5px;
+	font-size: 100%;
+	font-family: Courier New;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	padding-top: 5px;
+}
+
+div.title3 {
+	border-bottom: 2px solid black;
+	border-left: 2px solid black;
+	background-color: #F7DC6F;
+	position: relative;
+	width: 40%;
+	height: 30px;
+	float: right;
+	margin-top: 15px;
+	margin-right: 12.5px;
+	font-size: 100%;
+	font-family: Courier New;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 5px;
 }
 
 /********** Large devices only **********/
@@ -111,9 +148,11 @@ div.title1 {
   	<p>Item 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
   </div>
   <div class="col-lg-2 col-md-2">
+  	<div class="title2">Beef</div>
   	<p>Item 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
   </div>
   <div class="col-lg-3 col-md-3">
+  	<div class="title3">Sushi</div>
   	<p>Item 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
   </div>
 </div>
