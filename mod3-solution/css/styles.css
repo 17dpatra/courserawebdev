@@ -4,16 +4,58 @@
 	border-radius: 0;
 	border: 0;
 	height: 100px;
-	/*color: #FDFEFE;*/
 }
-
-.navbar-brand h1{
-	color: #000000;
+.navbar-brand { /* Restaurant name: Food LLC*/
+	text-transform: uppercase;
 	font-weight: bold;
-	text-align: left;
+	font-family: 'Bebas Neue', cursive;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .h1, h1 {
-    font-size: 36px;
-    text-align: center;
+    font-size: 60px;
+    position: relative;
+    bottom: 12px;
+    color: #26619c;
+}
+
+.h2, h2 { /* title of page: Our Menu */
+	text-align: center;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none;
+}
+
+/* HOME PAGE */
+#chicken-tile, #beef-tile, #sushi-tile {
+	height: 250px;
+	width: 100%;
+	position: relative;
+	border: 2px solid black;
+	overflow: hidden;
+}
+
+#chicken-title:hover, #beef-tile:hover, #sushi-tile:hover {
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+/* END HOME PAGE */
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
 }
