@@ -54,12 +54,8 @@ p {
     height: 50px;
 }
 
-div.chicken-nav, div.beef-nav {
+div.chicken-nav, div.beef-nav, div.sushi-nav {
 	margin-top: -17px;
-}
-
-div.sushi-nav {
-	margin-top: -20px;
 }
 
 #chicken-title:hover, #beef-tile:hover, #sushi-tile:hover {
@@ -84,7 +80,7 @@ div.sushi-nav {
 @media (min-width: 1200px) {
 	/* HOME PAGE */
 	#chicken-tile, #beef-tile, #sushi-tile {
-		height: 250px;
+		margin-bottom: 50px;
 		width: 100%;
 		position: relative;
 		border: 2px solid black;
@@ -97,8 +93,8 @@ div.sushi-nav {
 @media (min-width: 992px) and (max-width: 1199px) {
 	/* HOME PAGE */
 	#chicken-tile, #beef-tile, #sushi-tile {
-		height: 250px;
 		width: 100%;
+		margin-bottom: 50px;
 		position: relative;
 		border: 2px solid black;
 		overflow: hidden;
@@ -119,6 +115,7 @@ div.sushi-nav {
 
 	#sushi-tile {
 		width: 735px;
+		margin-bottom: 50px;
 		position: relative;
 		border: 2px solid black;
 		overflow: hidden;
@@ -127,8 +124,9 @@ div.sushi-nav {
 }
 
 @media (max-width: 767px) {
+
 	#chicken-tile, #beef-tile {
-		margin-bottom: 15px;
+		margin-bottom: 40px;
 		position: relative;
 		border: 2px solid black;
 		overflow: hidden;
@@ -136,6 +134,7 @@ div.sushi-nav {
 	}
 
 	#sushi-tile {
+		margin-bottom: 50px;
 		position: relative;
 		border: 2px solid black;
 		overflow: hidden;
