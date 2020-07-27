@@ -3,7 +3,6 @@
 	background-color: #909497;
 	border-radius: 0;
 	border: 0;
-	height: 100px;
 }
 .navbar-brand { /* Restaurant name: Food LLC*/
 	text-transform: uppercase;
@@ -11,32 +10,56 @@
 	font-family: 'Bebas Neue', cursive;
 	margin-top: 0;
 	margin-bottom: 0;
+	background-color: #909497;
+	border-radius: 0;
+	border: 0;
+	height: 100px;
 }
 
 .h1, h1 {
     font-size: 60px;
     position: relative;
-    bottom: 12px;
-    color: #26619c;
+    bottom: 15px;
+    color: #282828;
+    text-decoration: none;
 }
 
 .h2, h2 { /* title of page: Our Menu */
-	text-align: center;
 	font-weight: bold;
 	padding-bottom: 10px;
+	text-decoration: none;
+}
+
+.h3, h3 {
+	font-style: italic;
+	color: #000000;
+}
+
+p {
+	margin: 10px 10px 10px;
+	color: #000000;
 }
 
 .navbar-brand a:hover, .navbar-brand a:focus {
 	text-decoration: none;
 }
 
-/* HOME PAGE */
-#chicken-tile, #beef-tile, #sushi-tile {
-	height: 250px;
-	width: 100%;
-	position: relative;
-	border: 2px solid black;
-	overflow: hidden;
+#nav-list a {
+    color: black;
+    text-align: center;
+    background-color: white;
+	margin-top: -7px;
+    margin-bottom: -7px;
+    border: 2px solid black;
+    height: 50px;
+}
+
+div.chicken-nav, div.beef-nav {
+	margin-top: -17px;
+}
+
+div.sushi-nav {
+	margin-top: -20px;
 }
 
 #chicken-title:hover, #beef-tile:hover, #sushi-tile:hover {
@@ -45,7 +68,6 @@
 
 #chicken-tile span, #beef-tile span, #sushi-tile span {
 	position: absolute;
-	bottom: 0;
 	right: 0;
 	width: 100%;
 	text-align: center;
@@ -60,15 +82,63 @@
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-  
+	/* HOME PAGE */
+	#chicken-tile, #beef-tile, #sushi-tile {
+		height: 250px;
+		width: 100%;
+		position: relative;
+		border: 2px solid black;
+		overflow: hidden;
+		background-color: #909497;
+	}
 }
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
-  
+	/* HOME PAGE */
+	#chicken-tile, #beef-tile, #sushi-tile {
+		height: 250px;
+		width: 100%;
+		position: relative;
+		border: 2px solid black;
+		overflow: hidden;
+		background-color: #909497;
+	}
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
+	#chicken-tile, #beef-tile {
+		width: 360px;
+		margin: 0 auto 15px;
+		position: relative;
+		border: 2px solid black;
+		overflow: hidden;
+		background-color: #909497;
+	}
 
+	#sushi-tile {
+		width: 735px;
+		position: relative;
+		border: 2px solid black;
+		overflow: hidden;
+		background-color: #909497;
+	}
+}
+
+@media (max-width: 767px) {
+	#chicken-tile, #beef-tile {
+		margin-bottom: 15px;
+		position: relative;
+		border: 2px solid black;
+		overflow: hidden;
+		background-color: #909497;
+	}
+
+	#sushi-tile {
+		position: relative;
+		border: 2px solid black;
+		overflow: hidden;
+		background-color: #909497;
+	}
 }

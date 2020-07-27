@@ -19,51 +19,65 @@
   </head>
 <body>
   <header>
-    <nav id="header-nav" class="navbar navbar-default">
+    <nav id="header-nav" class="navbar navbar-default navbar-static-top">
       <div class="container">
         <div class="navbar-header">
           <div class="navbar-brand">
             <a href="index.html"><h1>Food, LLC</h1></a>
           </div>
 
-          <!-- <div id="collapsable-nav" class="collapse navbar-collapse">
-            <ul id="nav-list" class="nav navbar-nav navbar-right">
-              <li>
-                <a href="menu-categories.html">
-                  <br class="hidden-xs"> Menu</a>
-              </li>
-              <li>
-                <a href="#">
-                  <br class="hidden-xs"> About</a>
-              </li>
-              <li>
-                <a href="#">
-                  <br class="hidden-xs"> Awards</a>
-              </li>
-            </ul>
-          </div> -->
+          <!-- Add hamburger button -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
         </div>
-      </div>
-    </nav>
 
-    <h2>Our Menu</h2>
+        <div id="collapsable-nav" class="collapse navbar-collapse ">
+           <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs-block">
+            <li>
+                <a href="#chicken-tile"><br><div class="chicken-nav">Chicken</div></a>
+            </li>
+            <li>
+              <a href="#beef-tile"><br><div class="beef-nav">Beef</div></a>
+            </li>
+            <li>
+              <a href="#sushi-tile"><br><div class="sushi-nav">Sushi</div></a>
+            </li>
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .ontainer -->
+    </nav><!-- #header-nav -->
+
+    <h2 class="text-center">Our Menu</h2>
     <div id="main-content" class="container">
       <div id="home-tiles" class="row">
-        
+
         <div class="col-md-4 col-sm-6 col-xs-12">
-          <a href="chicken.html"><div id="chicken-tile"><span>chicken</span></div></a>
+          <div id="chicken-tile">
+            <h3 class="text-center">Chicken</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel dapibus nisl, at scelerisque risus. Cras porttitor, est ut feugiat ultrices, libero nunc malesuada erat, non porttitor mauris dui eget purus. Duis ut elit ullamcorper, tempor velit eget, fringilla purus. Nulla suscipit laoreet ex id commodo. Donec mi mauris, commodo at lobortis ac, volutpat sit amet tortor.</p>
+          </div>
         </div>
 
         <div class="col-md-4 col-sm-6 col-xs-12">
-          <a href="beef.html"><div id="beef-tile"><span>beef</span></div></a>
+          <div id="beef-tile">
+            <h3 class="text-center">Beef</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel dapibus nisl, at scelerisque risus. Cras porttitor, est ut feugiat ultrices, libero nunc malesuada erat, non porttitor mauris dui eget purus. Duis ut elit ullamcorper, tempor velit eget, fringilla purus. Nulla suscipit laoreet ex id commodo. Donec mi mauris, commodo at lobortis ac, volutpat sit amet tortor.</p>
+          </div>
         </div>
 
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <a href="sushi.html"><div id="sushi-tile"><span>sushi</span></div></a>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <div id="sushi-tile">
+            <h3 class="text-center">Sushi</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel dapibus nisl, at scelerisque risus. Cras porttitor, est ut feugiat ultrices, libero nunc malesuada erat, non porttitor mauris dui eget purus. Duis ut elit ullamcorper, tempor velit eget, fringilla purus. Nulla suscipit laoreet ex id commodo. Donec mi mauris, commodo at lobortis ac, volutpat sit amet tortor.</p>
+          </div>
         </div>
 
-      </div>
-    </div>
+      </div> <!-- end of home-tiles -->
+    </div> <!-- end of main-content -->
 
   </header>
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
